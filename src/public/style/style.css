@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFDF4;
+
+    font-family: 'Mustica Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 21px;
+    color: #1f1f1f;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-underline: none;
+    color: #1f1f1f;
+    text-decoration: none;
+}
+
+button {
+    background-color: #9DBBAE;
+    color: #fefff2;
+    border: none;
+    margin: 10px 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #D5D6AA;
+    color: #1f1f1f;
+}
+
+header {
+    background-color: #D5D6AA;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+header nav > img {
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.header_link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.header_over_link {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_profile_link a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_profile_link a img {
+    width: 30px;
+    height: 30px;
+}
