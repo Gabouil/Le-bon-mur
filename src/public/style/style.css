@@ -46,7 +46,7 @@ header {
     padding: 10px;
 }
 
-header nav > img {
+header nav a > img {
     width: 50px;
     height: 50px;
     margin-left: 50px;
@@ -66,16 +66,19 @@ header nav {
     justify-content: space-around;
     width: 100%;
 }
-.header_link form{
+
+.header_link form {
     width: 300px;
 }
-.header_link input{
+
+.header_link input {
     width: 100%;
     height: 100%;
     border-radius: 50px;
     padding: 10px 15px;
     border: none;
 }
+
 .header_link input:focus {
     border: #9DBBAE solid 1px;
 }

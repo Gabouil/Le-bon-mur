@@ -21,7 +21,7 @@ class AnnoncesController extends AbstractController
     {
         $annonces = $annonceRepository->findAllPublished();
 
-        return $this->render('annonces/annonceById.html.twig', [
+        return $this->render('annonces/index.html.twig', [
             'controller_name' => 'AnnoncesController',
             'annonces' => $annonces
         ]);

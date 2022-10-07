@@ -53,7 +53,9 @@ final class AnnonceFactory extends ModelFactory
     {
         // see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#initialization
         return $this
-            // ->afterInstantiate(function(Annonce $annonce): void {})
+             ->afterInstantiate(function(Annonce $annonce): void {
+                 $annonce->setSlug(strtolower(str_replace(" ", "-", $annonce->getTitle())));
+             })
         ;
     }
 

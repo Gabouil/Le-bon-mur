@@ -1,14 +1,14 @@
 {% extends 'base.html.twig' %}
 
 
-        {% block stylesheets %}
-            {{ parent() }}
-            <link rel="stylesheet" href="/style/homeStyle.css">
-        {% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="/style/homeStyle.css">
+{% endblock %}
 
 {% block main %}
     <div class="post_announce">
-        <button>Poster une annonce</button>
+        <a href="http://localhost:5555/annonces/add">Poster une annonce</a>
     </div>
     <div>
         <h1>Bienvenue sur Le Bon Mur</h1>
