@@ -70,6 +70,17 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/symfony/var-exporter" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/symfony/web-profiler-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/doctrine-fixtures-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/data-fixtures" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/fakerphp/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/zenstruck/foundry" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/zenstruck/callback" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/zenstruck/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/symfony/property-info" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/symfony/property-access" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/stof/doctrine-extensions-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/behat/transliterator" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/gedmo/doctrine-extensions" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -7,6 +7,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation\Slug;
 
 #[ORM\Entity(repositoryClass: QuestionRepository::class)]
 class Question
@@ -18,6 +19,10 @@ class Question
 
     #[ORM\Column(length: 255)]
     private ?string $content = null;
+
+    #[ORM\Column(length: 255, unique: true)]
+    #[Slug(fields: ['name'])]
+    private ?string $slug = null;
 
     #[ORM\ManyToOne(cascade: ['persist', 'remove'], inversedBy: 'questions')]
     #[ORM\JoinColumn(nullable: false)]
@@ -51,6 +56,18 @@ class Question
     public function setContent(string $content): self
     {
         $this->content = $content;
+
+        return $this;
+    }
+
+    public function getSlug(): ?string
+    {
+        return $this->slug;
+    }
+
+    public function setSlug(string $slug): self
+    {
+        $this->slug = $slug;
 
         return $this;
     }

@@ -3,6 +3,7 @@
 namespace App\Repository;
 
 use App\Entity\Annonce;
+use App\Entity\Question;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
@@ -37,6 +38,29 @@ class AnnonceRepository extends ServiceEntityRepository
         if ($flush) {
             $this->getEntityManager()->flush();
         }
+    }
+
+    /**
+     * @return Question[]
+     */
+    public function findAllPublished(): array
+    {
+        return $this->createQueryBuilder("q")
+            ->andWhere("q.createdAt IS NOT NULL")
+            ->getQuery()
+            ->getResult();
+    }
+    /**
+     * @return Question[]
+     */
+    public function findPublishedByid($id): array
+    {
+        return $this->createQueryBuilder("q")
+            ->andWhere("q.id = :value")
+            ->setParameter("value", $id)
+            ->orderBy("q.createdAt", "DESC")
+            ->getQuery()
+            ->getResult();
     }
 
 //    /**
