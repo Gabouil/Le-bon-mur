@@ -18,7 +18,7 @@
 <header>
     {% block header %}
         <nav>
-            <a href="http://localhost:5555/"><img src="/assets/logo-leBonMur.svg"></a>
+            <a href="http://localhost:5555/"><img src="/assets/logo-text-leBonMur.svg"></a>
             <div class="header_link">
                 <div class="header_over_link">
                     <a href="http://localhost:5555/">Acceuil</a>
@@ -38,7 +38,9 @@
     {% endblock %}
 </header>
 <main>
-    {% block main %}{% endblock %}
+    <div class="main_container">
+        {% block main %}{% endblock %}
+    </div>
 </main>
 </body>
 </html>
