@@ -1,0 +1,55 @@
+
+.annonces_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    width: 1000px;
+}
+
+.img_annonce {
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.annonce_card_infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.annonce_card_infos a {
+    background-color: #F5EE9E;
+    color: black;
+    border: none;
+    margin: 10px 5px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: .5s;
+    box-shadow: 6px 6px 0 0 #FFD400;
+}
+
+.annonce_card_infos a:hover {
+    cursor: pointer;
+    background-color: #FFD400;
+    box-shadow: -6px -6px 0 0 #F5EE9E;
+}
+
+
+/*style id card*/
+
+.annonce_card_id {
+    width: 90vw;
+    padding: 10px;
+}
+
+.img_annonce_id {
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+
+}

@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Mustica Pro', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -21,7 +21,7 @@ a {
 }
 
 button {
-    background-color: #0DA0A8;
+    background-color: #699FB5;
     border: none;
     margin: 10px 5px;
     padding: 15px 30px;
@@ -31,7 +31,7 @@ button {
 
 button:hover {
     cursor: pointer;
-    background-color: #27E8ED;
+    background-color: #00A6A6;
 }
 
 header {
@@ -107,7 +107,6 @@ header nav input:active {
 
 
 main {
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
