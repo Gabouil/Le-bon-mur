@@ -1,7 +1,7 @@
 
 
 .acceuil_banner {
-    width: 100%;
+    width: 100vw;
     height: 50vh;
     position: relative;
     overflow: hidden;
