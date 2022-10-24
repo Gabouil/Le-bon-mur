@@ -20,24 +20,6 @@
     align-items: center;
 }
 
-.annonce_card_infos a {
-    background-color: #F5EE9E;
-    color: black;
-    border: none;
-    margin: 10px 5px;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-size: 15px;
-    transition: .5s;
-    box-shadow: 6px 6px 0 0 #FFD400;
-}
-
-.annonce_card_infos a:hover {
-    cursor: pointer;
-    background-color: #FFD400;
-    box-shadow: -6px -6px 0 0 #F5EE9E;
-}
-
 
 /*style id card*/
 
