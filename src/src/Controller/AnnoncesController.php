@@ -47,7 +47,7 @@ class AnnoncesController extends AbstractController
     {
         dump($request);
         $newAnnonce = (new Annonce())
-            ->setTitle($request->request->get('titre'))
+            ->setTitle($request->request->get('title'))
             ->setDescription($request->request->get("desc"))
             ->setPrice($request->request->get("price"))
             ->setPhotos(["https://www.fidealis.com/wp-content/uploads/2019/09/copyright-filigrane-photo-1024x576.jpg", "https://img.20mn.fr/hwEpbL-5RHOpinEURr3ItA/768x492_debuter-appareil-pro-aidera-forcement", "https://www.petitescargot-photos.com/wp-content/uploads/2020/11/Photographie.jpg"])

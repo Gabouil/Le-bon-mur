@@ -42,8 +42,6 @@ header {
     padding: 10px;
     justify-content: center;
     align-items: center;
-
-    width: 100vw;
 }
 
 header nav a > img {
@@ -113,7 +111,4 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.main_container {
-    width: 1000px;
 }
